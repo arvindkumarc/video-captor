@@ -1,0 +1,7 @@
+vcaptor:
+  build: .
+  devices:
+    - "/dev/usb/hiddev0:/dev/video0"
+  volumes:
+    - "./:/myapp"
+  command: "sh -c 'python3 /myapp/src/captor.py'"
